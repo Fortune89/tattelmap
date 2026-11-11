@@ -1,0 +1,441 @@
+
+/* ========================================
+   ExploreLboro - Homepage
+   Cream and Dark Plum Theme
+======================================== */
+
+/* Main homepage section */
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 24px;
+  text-align: center;
+}
+
+/* Main heading */
+
+.app h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(3.2rem, 6vw, 5rem);
+  font-weight: 800;
+  color: #48263F;
+  margin-bottom: 24px;
+}
+
+/* Homepage paragraphs */
+
+.app p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #48263F;
+  max-width: 650px;
+  margin: 0 auto 20px;
+}
+
+/* Explore button */
+
+.app button {
+  margin-top: 24px;
+  padding: 16px 32px;
+  background-color: #48263F;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.app button:hover {
+  background-color: #68465F;
+  transform: translateY(-2px);
+}
+
+.app button:focus-visible {
+  outline: 3px solid #48263F;
+  outline-offset: 4px;
+}
+
+/* ========================================
+   Navigation Bar
+======================================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #48263F;
+  color: #FFFFFF;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: #E0B5AE;
+}
+
+/* ========================================
+   Homepage Photo Collage
+======================================== */
+
+.hero-photos {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-rows: 160px 160px;
+  gap: 16px;
+  margin-top: 60px;
+}
+
+.campus-photo,
+.town-photo,
+.cafe-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  padding: 20px;
+  border-radius: 28px;
+  color: #48263F;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.campus-photo {
+  grid-row: span 2;
+  background-color: #FFFFFF;
+  padding: 0;
+}
+
+.campus-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: cover;
+}
+
+.town-photo {
+  background-color: #E0B5AE;
+  padding: 0;
+  overflow: hidden;
+}
+
+.town-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cafe-photo {
+  background-color: #FFFFFF;
+  padding: 0;
+  overflow: hidden;
+}
+
+.cafe-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========================================
+   Homepage Layout
+======================================== */
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  color: #48263F;
+}
+
+.hero-text p {
+  margin-left: 0;
+  margin-right: 0;
+  color: #48263F;
+}
+
+.hero-photos {
+  margin-top: 0;
+}
+
+/* ========================================
+   Explore Page
+======================================== */
+
+.explore-page {
+  padding: 40px 5%;
+  background-color: #FAF7F2;
+  color: #48263F;
+}
+
+.explore-page h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  color: #48263F;
+  margin-bottom: 15px;
+}
+
+.explore-page p {
+  color: #48263F;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.leaflet-container {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid #E0B5AE;
+}
+
+/* ========================================
+   About Page
+======================================== */
+
+.about-page {
+  padding: 50px 7%;
+  background-color: #FAF7F2;
+  color: #3d3030;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 55px 20px;
+  background-color: #742c3a;
+  color: white;
+  border-radius: 12px;
+}
+
+.about-hero h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.about-intro {
+  max-width: 850px;
+  margin: 55px auto;
+  text-align: center;
+}
+
+.about-intro h2,
+.discover-section h2 {
+  color: #742c3a;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.about-intro p,
+.discover-section > p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.discover-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.about-photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.about-photo-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.about-photo-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-photo-card h3,
+.about-photo-card p {
+  margin: 15px 18px;
+}
+
+.about-photo-card h3 {
+  color: #742c3a;
+}
+
+.about-photo-card p {
+  line-height: 1.6;
+}
+
+/* ========================================
+   Footer
+======================================== */
+
+.footer {
+  background-color: #48263F;
+  color: #FFFFFF;
+  padding: 22px 7% 12px;
+  margin-top: 35px;
+  border-top: 2px solid #815E76;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content h2,
+.footer-content h3,
+.footer-content p {
+  color: #FFFFFF;
+}
+
+.footer-content h2 {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.footer-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+.footer-content h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #815E76;
+  margin-top: 15px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+/* ========================================
+   General Background
+======================================== */
+
+body {
+  background-color: #FAF7F2;
+  color: #48263F;
+  margin: 0;
+}
+
+/* ========================================
+   Mobile Responsive Design
+======================================== */
+
+@media (max-width: 800px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    color: #48263F;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-photos {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 29px;
+  }
+
+  .about-page {
+    padding: 30px 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 70px 20px;
+  }
+
+  .navbar {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+
+  .hero-photos {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 220px 180px 180px;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .campus-photo,
+  .town-photo,
+  .cafe-photo {
+    grid-row: auto;
+  }
+}
