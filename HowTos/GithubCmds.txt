@@ -1,0 +1,17 @@
+How to clone a project for local work
+>In the project repository, you can click the Green code button and either
+1)clone the zip and download it plainly
+2) Copy the web url 
+  - in VSCODE, or terminal/cmd prompt enter : git clone PROJECT-urla new folder should be created. 
+  [make sure to cd to the parent folder, e.g documents, desktop etc, that you want the project to be in]
+
+How to upload a project to a repository you own
+
+How to upload to a shared repository as a collaborator
+
+How to accept a pull request as a project owner
+> Goto the shared repository and open the pull requsts tab
+> Select the pull request and review the changed with the 'Files changed' tab
+> return to the main conversation tab, goto the bottom and click 'Merge Pull Request'
+>Click 'Confirm Merge' to intergrate the change into the main branch and project
+> You can delete the branch the change was pushed on to cleanup
