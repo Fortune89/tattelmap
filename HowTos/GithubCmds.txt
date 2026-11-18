@@ -5,9 +5,37 @@ How to clone a project for local work
   - in VSCODE, or terminal/cmd prompt enter : git clone PROJECT-urla new folder should be created. 
   [make sure to cd to the parent folder, e.g documents, desktop etc, that you want the project to be in]
 
+
+To link a local project to an online repository
+git remote add origin <YOUR-REPOSITORY-URL> 
+    //sets the origin url the code should follow/build on - should be the main branch folder 
+
 How to upload a project to a repository you own
 
+git init  //initiates a local git project
+git add .  //adds all project files to local git
+git commit -m "Message about the change here"  //commits the changes and adds a message for tracking
+git branch -M main  //becomes option if on personal project, the M is for the Master branch called main
+git remote add origin <YOUR-REPOSITORY-URL> //sets the origin url the code should follow/build on - should be the main branch folder 
+git push -u origin main  //pushes changes to the main branch
+
+//when this main loop is done, you can simply add, commit and push to main for personal projects, in that loop
+
 How to upload to a shared repository as a collaborator
+In the cloned project file that's linked to the project url , in terminal
+Before upload:
+git checkout main                 //checks the main branch is connected 
+git pull origin main              //copies the main branch files to local project - prevents clashing with new updates by calling the most updated project before you add your own changes
+to add a change or feauture, create a new branch with -b
+git checkout -b newBranchName       //the new branch isnt in quotes
+git add .                         //adds all project files , remember your .gitignore file to ignore nodemodules and uneccessary things!
+git commit -m "update message"    // -m signifies a message, and messages about the update must be kept in quotations
+git push -u origin newBranchName  //pushes the changes to the new branch
+
+//once changes have been pushes to the new branch, the owner, and/or other collaborators, can review 
+the changes line by line and which files were altered or added before merging to the main branch
+ 
+
 
 How to accept a pull request as a project owner
 > Goto the shared repository and open the pull requsts tab
