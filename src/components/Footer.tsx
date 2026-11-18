@@ -10,7 +10,7 @@ function Footer() {
 
         <h3>Get in touch</h3>
 
-        <p>Email: your-email@example.com</p>
+        <p>Email: ExploreLboro@TATTEl.com</p>
         <p>Instagram: @ExploreLboro</p>
 
       </div>
