@@ -56,6 +56,10 @@ function Home() {
             />
           </div>
         </div>
+
+        <div id="pushingtest">
+        <p> This is new added text for our devs! Try removing it in your next push and state what's changed</p>
+        </div>
       </div>
     </div>
   )
