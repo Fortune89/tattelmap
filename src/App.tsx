@@ -1,4 +1,3 @@
-
 import Footer from './components/Footer'
 import universityPhoto from './images/loughborough-university.jpg'
 import townPhoto from './images/loughborough-town.jpg'
@@ -55,10 +54,6 @@ function Home() {
               alt="Nina's Cafe in Loughborough"
             />
           </div>
-        </div>
-
-        <div id="pushingtest">
-        <p> This is new added text for our devs! Try removing it in your next push and state what's changed</p>
         </div>
       </div>
     </div>
