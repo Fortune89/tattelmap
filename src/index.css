@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+:root {
+  font-family: 'Segoe UI', Arial, sans-serif;
+
+  /* ExploreLboro colour palette */
+  --burgundy: #650D25;
+  --nude: #F5D6C6;
+  --cream: #FFF3E8;
+  --rose: #E99A9A;
+
+  color: var(--cream);
+  background-color: var(--burgundy);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--burgundy);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
