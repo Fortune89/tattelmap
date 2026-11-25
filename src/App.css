@@ -439,6 +439,7 @@ body {
     grid-row: auto;
   }
 }
+
 .location-marker {
   background: transparent;
   border: none;
@@ -615,3 +616,5 @@ body {
     padding: 28px 22px;
   }
 }
+
+

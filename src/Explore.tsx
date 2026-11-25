@@ -42,7 +42,6 @@ function Explore() {
         Your adventure begins now! 🚉✨
       </p>
 
-      {/* Category filter buttons */}
       <div className="category-filters">
         <button onClick={() => setCategory('all')}>
           🌍 All Places

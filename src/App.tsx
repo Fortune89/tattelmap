@@ -7,9 +7,9 @@ import { Routes, Route, Link } from 'react-router-dom'
 import Explore from './Explore'
 import About from './About'
 import Register from './Register'
+import Login from './Login'
 import './App.css'
 import Navbar from './components/Navbar'
-import Login from './Login'
 
 function Home() {
   return (
@@ -73,7 +73,7 @@ function App() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login/>} />
+        <Route path="/login" element={<Login />} />
       </Routes>
 
       <Footer />
